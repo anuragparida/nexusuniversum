@@ -1,0 +1,13 @@
+@use "sass:color";
+
+@function event-height($line-height, $font-size){
+   $result: $line-height * $font-size;
+   @return $result;
+}
+
+@function changeColor($color){
+   $result: $color;
+   // $result: color.scale($color, $saturation: 0%);
+   $result: color.scale($result, $lightness: +10%);
+   @return $result;
+}

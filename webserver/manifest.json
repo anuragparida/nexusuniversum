@@ -1,0 +1,43 @@
+{
+  "theme_color": "orange",
+  "background_color": "orange",
+  "display": "standalone",
+  "short_name": "Nexus App",
+  "prefer_related_applications": false,
+  "name": "Nexus App",
+  "description": "Nexus App",
+  "start_url": "https://nexus-app.dev.netlands.de/",
+  "icons": [
+    {
+      "src": "/images/app-icon-64.png",
+      "sizes": "63x64",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/app-icon-128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/app-icon-180.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/app-icon-256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/app-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/app-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

@@ -1,0 +1,866 @@
+#page-wrapper.darkmode{
+  background-color: $darkmode-darkgrey;
+
+  .back{
+    background-color: $darkmode-primary;
+  }
+
+  .button {
+    &.primary {
+      background-color: $darkmode-primary;
+    }
+    &.secondary{
+      outline-color: $darkmode-primary;
+      background-color: $darkmode-darkgrey;
+    }
+  } 
+
+  ::marker{
+    color: $darkmode-darkgrey;
+  }
+
+  .menus {
+    background-color: $darkmode-primary;
+    // box-shadow: 0 -3px 10px 0 $darkmode-boxshadow;
+    background-image: linear-gradient(to right, $darkmode-primary 0%, $darkmode-primary-dark 50%);
+    box-shadow: none;
+    .menu-open {
+      background-color: $darkmode-primary;
+      background-image: linear-gradient(to right, $darkmode-primary 0%, $darkmode-primary-dark 50%);
+      .list-items{
+        color: $darkmode-darkgrey;
+      }
+    }
+    .menu-account {
+      background-color: transparent;
+    }
+    .menu-burger {
+      background-color: transparent;
+    }
+    h1{
+      color: $color-white;
+    }
+    
+    .type {
+      color: $darkmode-primary-dark
+    }
+  }
+
+  .login {
+    h1 {
+      color: $color-white;
+    }
+    .nexus {
+      color: $color-white;
+    }
+    .universum {
+      color: $color-white;
+    }
+    input{
+      background-color: $color-white;
+    }
+    .error {
+      color: $darkmode-primary
+    }
+  }
+
+  .container-footer {
+    background-color: $darkmode-primary;
+    // box-shadow: 0px 3px 10px 0px $darkmode-boxshadow;
+    background-image: linear-gradient(to right, $darkmode-primary 0%, $darkmode-primary-dark 50%);
+    box-shadow: none;
+    .icon {
+      &.digitalStudentId{
+        path {
+          fill: $color-white;
+        }
+      } 
+      &.mensaMenu{
+        path {
+          fill: $color-white;
+        }
+      } 
+      &.uniTokens{
+        path {
+          fill: $color-white;
+        }
+      } 
+      &.faqs{
+        path {
+          fill: $color-white;
+        }
+      } 
+      &.alumniNetwork{
+        path {
+          fill: $color-white;
+        }
+      }  
+      &.homefeed {
+        path {
+          fill: $color-white;
+        }
+      }
+      &.item-info {
+        path {
+          fill: $color-white;
+        }
+      }
+      &.filterhomefeed {
+        path {
+          fill: $color-white;        
+        }
+      }
+      &.filteredhomefeed {
+        path {
+          fill: $color-white;        
+        }
+      }
+      &.add {
+        path {
+          fill: $color-white;
+        }
+      }
+      &.profile {
+        path {
+          fill: $color-white;
+        }
+      }
+      &.calendar {
+        & path{
+          fill: $color-white;
+        }
+      }  
+      &.calendarDay {
+        & path{
+          fill: $color-white;
+        }
+      }
+    
+      &.thwsAnnouncement {
+        & path{
+          fill: $color-white;
+        }
+      }
+
+      &.settings{
+        & path{
+          fill: $color-white;
+        }
+      }
+
+      &.faculties{
+        & path{
+          fill: $color-white;
+        }
+      }
+    
+      &.chats{
+        & path{
+          fill: $color-white;
+        }
+      }  
+    
+      &.chat{
+        & path{
+          fill: $color-white;
+        }
+      }  
+    
+      &.groupchat{
+        & path{
+          fill: $color-white;
+        }
+      } 
+    
+      &.course{
+        & path{
+          fill: $color-white;
+        }
+      }
+    
+      &.e-learning{
+        & path{
+          fill: $color-white;
+        }
+      }
+      
+      &.help{
+        & path{
+          fill: $color-white;
+        }
+      }
+    
+      &.job{
+        & path{
+          fill: $color-white;
+        }
+      }
+    }
+  }
+
+  .container-homeFeed{
+    input[type="checkbox"]:focus {
+      outline: max(1px, 0.1em) solid $color-white;
+    }
+    h1, h2{
+      color: $color-white;
+    }
+    .button{
+      & path{
+        fill: $darkmode-primary;
+      }
+    }
+    .search {
+      .searchbar {
+        background-color: $darkmode-darkgrey;
+          border-color: $darkmode-primary;
+          &::placeholder{
+            color: $color-white;
+          }
+          &:focus{
+            border: 2px solid $color-white;
+            caret-color: $color-white;
+            color: $color-white;
+          }
+      }
+    }
+    label {
+      color: $color-white;
+    }
+    input[type="checkbox"] {
+      &.course {
+        border-color: $darkmode-course;
+        &::before {
+          background-color: $darkmode-course;
+        }
+      }  
+      &.thwsAnnouncement {
+        border-color: $darkmode-alumni;
+        &::before {
+          background-color: $darkmode-alumni;
+        }
+      } 
+      &.groupchat {
+        border-color: $darkmode-sports;
+        &::before {
+          background-color: $darkmode-sports;
+        }
+      } 
+      &.help {
+        border-color: $darkmode-information;
+        &::before {
+          background-color: $darkmode-information
+        }
+      } 
+      &.job {
+        border-color: $darkmode-social;
+        &::before {
+          background-color: $darkmode-social;
+        }
+      }
+    }
+    .swiper-slide {
+      background-color: $color-subtext;
+    }
+  }
+
+  .container-filteredHomeFeed {
+    h1 {
+      color: $color-white;
+    }
+    .more-button {
+      background-color: $darkmode-primary;
+      & path {
+        background-color: $color-white;
+      }
+    }
+    .content {
+      box-shadow: inset 0 10px 5px -10px $darkmode-boxshadow;
+    }
+  }
+  
+  .container-filterHomeFeed {
+    h1, h2 {
+      color: $color-white;
+    }
+    .swiper-slide {
+      background-color: $color-subtext;
+    }
+    .name {
+      p {
+        color: $color-white;
+      }
+      >div {
+        color: $color-white;
+      }
+    }
+  }
+
+  .container-infoBoard {
+    h2, h1 {
+      color: $color-white;
+    }
+    
+  }
+
+  .container-infoboardItem{
+    .icon {
+      &.course{
+        background-color: $darkmode-course;
+      }
+    }
+    background-color: $color-subtext;
+    .name {
+      color: $color-white;
+    } 
+    .description {
+      font-weight: $font-weight-subheading;
+      color: $color-maintext;
+    }
+    .more {
+      & path {
+        fill: $darkmode-primary;
+      }
+    }
+  }
+  
+  .container-homeFeedItem {
+    background-color: $color-subtext;
+    .name {
+      color: $color-white;
+    } 
+    .description {
+      font-weight: $font-weight-subheading;
+      color: $color-maintext;
+      .badges {
+        background-color: $color-lightgrey;
+        >div {
+          color: $color-maintext;
+        }  
+      }
+    }
+    .more {
+      & path {
+        fill: $darkmode-primary;
+      }
+    }
+    .icon {
+      &.course {
+        background-color: $darkmode-course;
+      }
+  
+      &.academic {
+        background-color: $darkmode-academic;
+      }
+  
+      &.sports {
+        background-color: $darkmode-sports;
+      }
+  
+      &.information {
+        background-color: $darkmode-information;
+      }
+  
+      &.alumni {
+        background-color: $darkmode-alumni;
+      }
+  
+      &.social {
+        background-color: $darkmode-social;
+      }
+    }
+  }
+
+  .container-informationItem {
+    background-color: $color-subtext;
+    .head {
+      .headline {
+        color: $color-white;
+      }  
+      .more {
+        fill: $darkmode-primary;
+      }
+    }
+    .description {
+      color: $color-white;
+    }
+  }
+
+  .container-calendar{
+    background-color: $darkmode-darkgrey;
+    input[type="checkbox"] {
+      &.course {
+        border-color: $darkmode-course;
+        &::before {
+          background-color: $darkmode-course;
+        }
+      }  
+      &.academic {
+        border-color: $darkmode-academic;
+        &::before {
+          background-color: $darkmode-academic;
+        }
+      } 
+      &.sports {
+        border-color: $darkmode-sports;
+        &::before {
+          background-color: $darkmode-sports;
+        }
+      } 
+      &.social {
+        border-color: $darkmode-social;
+        &::before {
+          background-color: $darkmode-social;
+        }
+      }
+      
+    }
+
+    input[type="checkbox"]:focus {
+      outline: max(1px, 0.1em) solid $color-white;
+    }
+    .yearPicker {
+      border-color: $darkmode-academic;
+      background-color: $darkmode-academic;
+    }
+    .content{
+      background-color: $darkmode-darkgrey;
+    }
+    .scroll-container{
+      background-color: $darkmode-darkgrey;
+    }
+    h2{
+      color: $color-white;
+    }
+    label{
+      color: $color-white;
+    }
+    .search{
+      &.showSearch{
+        background-color: $darkmode-darkgrey;
+        .searchbar{
+          background-color: $darkmode-darkgrey;
+          border-color: $darkmode-academic;
+          &::placeholder{
+            color: $color-white;
+          }
+          &:focus{
+            border: 2px solid $color-white;
+            caret-color: $color-white;
+            color: $color-white;
+          }
+        }
+      }
+    }
+    .weekdays{
+      background-color: $darkmode-darkgrey;
+      &.simple{
+        box-shadow: inset 0 10px 5px -10px $darkmode-boxshadow;
+      
+      }
+      &.default{
+        box-shadow: inset 0 10px 5px -10px $darkmode-boxshadow;
+      }
+      .weekday{
+        color: $color-white;
+      }
+    }
+  }
+
+  .item-container {
+    background-color: $darkmode-darkgrey;
+    
+    &.notCurrent {
+      background-color: $color-darkgrey;
+    }
+    .day-date {
+      color: $color-white;
+      &.today {
+        color: $darkmode-academic;
+      }
+    }
+    &.default {
+      .day-event{
+      
+        &.course{
+          @include event-default(changeColor($darkmode-course));
+        }
+        &.sports{
+          @include event-default(changeColor($darkmode-sports));
+        }
+        &.social{
+          @include event-default(changeColor($darkmode-social));
+        }
+        &.academic{
+          @include event-default(changeColor($darkmode-academic));
+        }
+      
+      }
+    }
+    &.simple {
+      .day-event{
+      
+        &.course{
+          @include event-simple(changeColor($darkmode-course));
+        }
+        &.sports{
+          @include event-simple(changeColor($darkmode-sports));
+        }
+        &.social{
+          @include event-simple(changeColor($darkmode-social));
+        }
+        &.academic{
+          @include event-simple(changeColor($darkmode-academic));
+        }
+        &.none{
+          @include event-simple(changeColor($darkmode-information));
+        }
+      
+      }
+    }
+    
+  }
+  
+  .container-eLearning {
+    h1 {
+      color: $color-white;
+    }
+  }
+
+  .container-settings {
+    h1, h4 {
+      color: $color-white;
+    }
+    hr {
+      border: 1px solid $color-darkgrey;
+    }
+    .link {
+      &.theme {
+        color: $color-white;
+      }  
+    }
+    .logout {
+      background-color: $darkmode-primary;
+    }
+    input:checked + .slider {
+      background-color: $darkmode-primary;
+    }
+    input:focus + .slider {
+      box-shadow: 0 0 1px $darkmode-primary;
+    }
+    .content {
+      box-shadow: inset 0 10px 5px -10px $darkmode-boxshadow;
+    }
+    .logout {
+      background-color: $darkmode-darkgrey;
+      outline: 3px solid $darkmode-primary;
+
+      &:hover {
+        background-color: $darkmode-primary;
+      }
+
+      .link {
+        color: $color-white;
+      }
+
+      svg {
+        fill: $color-white;
+      }
+    }
+  }
+
+  .container-faculties {
+    h1 {
+      color: $color-white;
+    }
+    .content {
+      box-shadow: inset 0 10px 5px -10px $darkmode-boxshadow;
+    }
+  }
+
+  .container-chat {
+    h1, .description{
+      color: $color-white;
+      div{
+        color: $color-white;
+      }
+    }
+    .title {
+      color: $color-white;
+    }
+    .groupImg {
+      background-color: $color-white;
+      &.course {
+        background-color: $darkmode-course;
+      }
+      &.academic {
+        background-color: $darkmode-academic;
+      }
+      &.social {
+        background-color: $darkmode-social;
+      }
+      &.sports {
+        background-color: $darkmode-sports;
+      }
+    }
+
+    .button {
+      & path {
+        fill: $color-white;
+      }
+      &.course {
+        & path {
+          fill: $darkmode-course;
+        }
+      }
+      &.academic {
+        & path {
+          fill: $darkmode-academic;
+        }
+      }
+      &.social {
+        & path {
+          fill: $darkmode-social;
+        }
+      }
+      &.sports {
+        & path {
+          fill: $darkmode-sports;
+        }
+      }
+    }
+    .content {
+      box-shadow: inset 0 10px 5px -10px $darkmode-boxshadow;
+    }
+  }
+
+  .container-allchats {
+    hr {
+      border: 1px solid $color-darkgrey;
+    }
+
+    h1 {
+      color: $color-white;
+    }
+
+    .content {
+      box-shadow: inset 0 10px 5px -10px $darkmode-boxshadow;
+    }
+
+    .headline {
+      .title {
+        color: $color-white;
+      }
+      button {
+        & path {
+          fill: $color-white;
+        }
+      }
+      
+    }
+    .chat {
+      .name {
+        color: $color-white;
+      }
+    }
+  }
+
+  .container-appointment {
+    h1, .description{
+      color: $color-white;
+    }
+    p {
+      color: $color-white;
+    }
+  }
+
+  .container-job{
+    h1, .description{
+      color: $color-white;
+    }
+    p {
+      color: $color-white;
+    }
+  }
+
+  .container-information{
+    h1, .description{
+      color: $color-white;
+    }
+    p {
+      color: $color-white;
+    }
+  }
+
+  .container-course {
+    h3, .headline, .description{
+      color: $color-white;
+    }
+    
+    .buttons {
+      .button {
+        &.secondary {
+          color: $color-white;
+        }
+      }
+    }
+    .content {
+      box-shadow: inset 0 10px 5px -10px $darkmode-boxshadow;
+      .item-img {
+        background-color: $color-subtext;
+      }
+    }
+  }
+
+  .container-day {
+    label {
+      color: $color-white;
+    }
+    .weekPicker{
+      border-color: $darkmode-academic;
+      background-color: $darkmode-academic;
+    }
+    .icons {
+      path {
+        fill: $darkmode-academic;
+      }
+      .button {
+        fill: $darkmode-academic;
+      }
+    }
+    
+    .weekdays {
+      box-shadow: inset 0 10px 5px -10px $darkmode-boxshadow;
+      .weekday {
+        color: $color-white;
+      }
+    }
+    
+    .weekdates {
+      box-shadow: 0 0 5px 0px $darkmode-boxshadow;
+      .weekday {
+        div {
+          color: $color-white;
+        }
+        .today-marker {
+          text-decoration: underline;
+        }
+        .selected {
+          background-color: $darkmode-academic;
+          color: $color-white;
+          width: 27px;
+          border-radius: 5px;
+          justify-content: center;
+          display: flex;
+        }
+      }
+    }
+    .day-wrapper {
+      .hour-wrapper {
+        .time {
+          span {
+            color: $color-white;
+          }
+        }
+      }
+    }
+    
+  }
+
+  .container-eventItem {
+    .add {
+      border: 2px solid $darkmode-primary-dark;
+    }
+    .event-container {
+      &.course{
+        background-color: $darkmode-course;
+      }
+      &.thwsAnnouncement{
+        background-color: $darkmode-alumni;
+      }
+      &.groupchat{
+        background-color: $darkmode-sports;
+      }
+    }
+  }
+  .container-profile{
+    h1 {
+      color: $color-white;
+    }
+    .description, .names, .text{
+      color: $color-white;
+    };
+    .studies {
+      color: $darkmode-primary;
+    }
+    .content {
+      box-shadow: inset 0 10px 5px -10px $darkmode-boxshadow;
+    }
+  }
+  .container-add {
+    h1 {
+      color: $color-white;
+    }
+    .filter {
+      background-color: $color-subtext;
+      color: $color-white;
+      option {
+        color: $color-white;
+      }
+    }
+    .content {
+      box-shadow: inset 0 10px 5px -10px $darkmode-boxshadow;
+    }
+
+    .searchbar {
+      border-color: $darkmode-primary;
+    }
+    .button {
+      & path {
+        fill: $darkmode-primary;
+      }
+    }
+  }
+  .container-iteminfo {
+    background-color: $darkmode-darkgrey;
+    h1 {
+      color: $color-white;
+    }
+    .amount-members {
+      color: $color-lightgrey;
+    }
+    .button {
+      &.secondary {
+        > div {
+          color: $color-white;
+        }
+      }
+      svg {
+        fill: $color-white;
+      }
+      
+    }
+    .content {
+      background-color: $darkmode-darkgrey;
+      box-shadow: inset 0 10px 5px -10px $darkmode-boxshadow;
+      .wrapper {
+        background-color: $color-subtext;
+        .heading {
+          div {
+            color: $color-lightgrey;
+          }
+        }
+        .text {
+          color: $color-white;
+          div {
+            color: $color-white;
+          }
+        }
+        .more {
+          fill: $darkmode-primary;
+        }
+      }
+      
+    }
+  }
+}

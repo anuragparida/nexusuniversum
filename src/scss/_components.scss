@@ -1,0 +1,130 @@
+//          Buttons
+//---------------------------------------
+
+%button{
+  font-family: $font-button;
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 600;
+  padding: 5px;
+}
+
+.button {
+  @extend %button; 
+
+  &.primary {
+    background-color: $color-primary;
+    color: $color-white;
+    border-radius: 15px;
+    border: none;
+    font-size: 20px;
+    width: 100px;
+
+    &:hover {
+      background-color: $color-primary-dark;
+    }
+  }
+
+  &.secondary {
+    background-color: $color-white;
+    color: $color-darkgrey;
+    border-radius: 15px;
+    font-size: 20px;
+    outline: 3px solid $color-primary;
+    outline-offset: -3px;
+    width: 100px;
+    
+    &:hover {
+      background-color: $color-lightgrey;
+    }
+  }
+
+  &.decent {
+    color: $color-primary;
+    text-decoration: underline;
+
+    &:hover{
+      color: $color-primary;
+    }
+  }
+}
+
+.checkboxSVG{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  input[type="checkbox"] {
+    position: relative;
+    -webkit-appearance: none;
+    appearance: none;
+    border: 0.15em solid;
+    border-radius: 0.2em;
+    width: 19px;
+    height: 19px;
+    transform: translateY(0.07em);
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 0;
+      transform: scale(0);
+      transform-origin: center;
+      transition: 120ms transform ease-in-out;
+    }
+
+    &.course  {
+      border-color: $color-course;
+      &::before {
+        background-color: $color-course;
+        background-image: url('@/components/icons/noun-school-4384041_white.svg');
+      }
+    }
+
+    &.academic  {
+      border-color: $color-academic;
+      &::before {
+        background-color: $color-academic;
+        background-image: url('@/components/icons/noun-talking-4383891_white.svg');
+      }
+    }
+
+    &.sports {
+      border-color: $color-sports;
+      &::before {
+        background-color: $color-sports;
+        background-image: url('@/components/icons/noun-talking-4383891_white.svg');
+      }
+    }
+
+    &.social {
+      border-color: $color-social;
+      &::before {
+        background-color: $color-social;
+        background-image: url('@/components/icons/noun-talking-4383891_white.svg');
+      }
+    }
+
+    &.none {
+      border-color: $color-information;
+      &::before {
+        background-color: $color-information;
+        // background-image: url('@/components/icons/noun-talking-4383891_white.svg');
+      }
+    }
+  }
+
+  input[type="checkbox"]:checked {
+  &::before {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+}
